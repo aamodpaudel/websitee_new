@@ -61,15 +61,15 @@ const Banner: React.FC<BannerProps> = ({
           </div>
           <div className="hidden md:block">
             <div>
-              <h3 className="font-bold text-lg">Circle Running Soon</h3>
-              <p className="text-yellow-200 font-medium text-sm mt-1">Prompt Engineering: Everyday AI Skills for the Modern Workplace</p>
+              <h3 className="font-bold text-lg">{title}</h3>
+              <p className="text-yellow-200 font-medium text-sm mt-1">{subtitle}</p>
             </div>
           </div>
 
           <div className="md:hidden">
             <div>
-              <h3 className="font-bold text-sm leading-tight">Circle Running Soon</h3>
-              <p className="text-yellow-200 font-medium text-xs mt-1">Prompt Engineering: Everyday AI Skills for the Modern Workplace</p>
+              <h3 className="font-bold text-sm leading-tight">{title}</h3>
+              <p className="text-yellow-200 font-medium text-xs mt-1">{subtitle}</p>
             </div>
           </div>
         </div>
