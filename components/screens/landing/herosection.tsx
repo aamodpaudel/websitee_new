@@ -106,8 +106,8 @@ export default function HeroSectionUpdated() {
             localStorage.setItem('banner-dismissed', 'true');
           }}
           onClick={handleBannerClick}
-          title="Circle Running Soon - Prompt Engineering: Everyday AI Skills for the Modern Workplace"
-          subtitle="Hands on AI circle to everyone: learn basic fundamentals, apply prompts to real life and lead your tasks with productivity"
+          title="Circle Running Soon"
+          subtitle="Prompt Engineering: Everyday AI Skills for the Modern Workplace"
         />
       )}
 
