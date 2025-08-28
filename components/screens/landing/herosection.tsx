@@ -2,17 +2,10 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CAREERLINK_VIDEO_URL, COMMUNITY_URL } from "@/consts";
+import { CAREERLINK_VIDEO_URL } from "@/consts";
 import {
-  ArrowRight,
-  Award,
-  BrainCircuit,
-  Briefcase,
-  CheckCircle,
-  Lightbulb,
   Play,
   Sparkles,
-  Users,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -57,19 +50,7 @@ export default function HeroSectionUpdated() {
     window.open("https://careerlink.ai/aisummercamp", "_blank");
   };
 
-  const circleVariants = {
-    hidden: { scale: 0, opacity: 0 },
-    visible: (custom: { opacity: number; index: number }) => ({
-      scale: 1,
-      opacity: custom.opacity,
-      transition: {
-        delay: 0.5 + custom.index * 0.2,
-        duration: 0.5,
-        type: "spring",
-        stiffness: 100,
-      },
-    }),
-  };
+  // circleVariants removed - not used
 
   const heroImageVariants = {
     hidden: { opacity: 0, scale: 0.7 },
@@ -85,30 +66,9 @@ export default function HeroSectionUpdated() {
     },
   };
 
-  const avatarVariants = {
-    hidden: { opacity: 0 },
-    visible: (custom: { index: number }) => ({
-      opacity: 1,
-      transition: {
-        delay: 1.2 + custom.index * 0.15,
-        duration: 0.5,
-      },
-    }),
-  };
+  // avatarVariants removed - not used
 
-  const floatingItemVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: (custom: { index: number }) => ({
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delay: 1.2 + custom.index * 0.15,
-        duration: 0.5,
-        type: "spring",
-        stiffness: 120,
-      },
-    }),
-  };
+  // floatingItemVariants removed - not used
 
   const videoVariants = {
     hidden: { opacity: 0, y: 50 },

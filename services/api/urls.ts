@@ -1,5 +1,4 @@
 import { AI_URL, COMMUNITY_URL } from "@/consts";
-import { requestCircle } from "./postService";
 
 export const REMOTE_URL = process.env.NEXT_PUBLIC_REMOTE_URL || COMMUNITY_URL;
 

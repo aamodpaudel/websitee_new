@@ -6,8 +6,6 @@ type BannerProps = {
   onClick: () => void;
   title: string;
   subtitle: string;
-  mobileTitle?: string;
-  mobileSubtitle?: string;
 };
 
 const Banner: React.FC<BannerProps> = ({
@@ -15,8 +13,6 @@ const Banner: React.FC<BannerProps> = ({
   onClick,
   title,
   subtitle,
-  mobileTitle,
-  mobileSubtitle,
 }) => {
   return (
     <div

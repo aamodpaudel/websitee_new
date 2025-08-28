@@ -93,8 +93,8 @@ export default function FeaturedCircles() {
             }}
           >
             {/* First set of cards */}
-            {featuredCircles.map((circle, index) => (
-                            <motion.div
+                        {featuredCircles.map((circle) => (
+              <motion.div
                 key={`first-${circle.id}`}
                 className="bg-transparent border-2 border-pink-600 rounded-xl p-6 shadow-lg min-w-[300px] h-[280px] flex flex-col"
               >
@@ -121,7 +121,7 @@ export default function FeaturedCircles() {
           ))}
           
           {/* Duplicate set of cards for seamless loop */}
-          {featuredCircles.map((circle, index) => (
+          {featuredCircles.map((circle) => (
             <motion.div
               key={`second-${circle.id}`}
               className="bg-transparent border-2 border-pink-600 rounded-xl p-6 shadow-lg min-w-[300px] h-[280px] flex flex-col"

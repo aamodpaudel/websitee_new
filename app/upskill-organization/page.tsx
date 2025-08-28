@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Users, Target, GraduationCap, CheckCircle, Star, BookOpen, UserCheck, Zap, Award, Building2, Lightbulb, Rocket } from "lucide-react";
+import { ArrowLeft, Users, GraduationCap, Zap, Award, Lightbulb, Rocket } from "lucide-react";
 import Link from "next/link";
 
 export default function UpskillOrganizationPage() {
@@ -176,7 +176,7 @@ export default function UpskillOrganizationPage() {
               Ready to Transform Your Organization?
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Let's discuss how AI can drive growth and innovation in your business.
+                             Let&apos;s discuss how AI can drive growth and innovation in your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-pink-600 text-white hover:bg-pink-700 px-8 py-3">

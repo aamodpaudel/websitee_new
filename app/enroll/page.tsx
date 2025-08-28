@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Users, Target, GraduationCap, CheckCircle, Star, BookOpen, UserCheck, Zap, Award, ThumbsUp, ThumbsDown, Share2 } from "lucide-react";
+import { ArrowLeft, Users, Target, GraduationCap, UserCheck, Zap, Award, ThumbsUp, ThumbsDown } from "lucide-react";
 import Link from "next/link";
 
 export default function EnrollPage() {
@@ -303,11 +303,11 @@ export default function EnrollPage() {
                }}
              >
                {/* First set of cards */}
-               {useCases.map((useCase, index) => (
-                                   <motion.div
-                    key={`first-${useCase.id}`}
-                    className="bg-white border-2 border-pink-600 rounded-xl p-6 shadow-lg min-w-[350px] h-[220px] flex flex-col"
-                  >
+                                 {useCases.map((useCase) => (
+                    <motion.div
+                      key={`first-${useCase.id}`}
+                      className="bg-white border-2 border-pink-600 rounded-xl p-6 shadow-lg min-w-[350px] h-[220px] flex flex-col"
+                    >
                    <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">
                      {useCase.title}
                    </h3>
@@ -338,11 +338,11 @@ export default function EnrollPage() {
                ))}
                
                {/* Duplicate set of cards for seamless loop */}
-               {useCases.map((useCase, index) => (
-                                   <motion.div
-                    key={`second-${useCase.id}`}
-                    className="bg-white border-2 border-pink-600 rounded-xl p-6 shadow-lg min-w-[350px] h-[220px] flex flex-col"
-                  >
+                                 {useCases.map((useCase) => (
+                    <motion.div
+                      key={`second-${useCase.id}`}
+                      className="bg-white border-2 border-pink-600 rounded-xl p-6 shadow-lg min-w-[350px] h-[220px] flex flex-col"
+                    >
                    <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2">
                      {useCase.title}
                    </h3>
